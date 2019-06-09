@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+    background-color: #cccccc;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 580px;
+    height: 380px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.close {
+    position: absolute;
+    top: 3px;
+    left: 30px;
+    cursor: pointer;
+    font-size: 37px;
+    transform: rotate(45deg);
+}
+
+.close2 {
+    position: absolute;
+    bottom: 310px;
+    left: 30px;
+    cursor: pointer;
+    font-size: 37px;
+}
+
+.para {
+    position: absolute;
+    top: 1px;
+    text-transform: capitalize;
+    color: black;
+    letter-spacing: 0.5px;
+    margin-left: 90px;
+    color: black;
+    text-shadow: 1px 1px 0px grey;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin-top: 80px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+    padding-left: 13px;
+}
+
+.container1 {
+    width: 155px;
+    height: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 90px;
+}
+
+.container2 {
+    width: 155px;
+    height: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.container3 {
+    width: 155px;
+    height: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 90px;
+}
+
+.container4 {
+    width: 155px;
+    height: 90px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.choice {
+    position: relative;
+    margin-left: 90px;
+    top: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+#hr2 {
+    margin-top: 42px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.65;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+
+.btn {
+    position: relative;
+    top: 15px;
+    left: 470px;
+}
+
+input[type="radio"] {
+    position: relative;
+    bottom: 48px;
+    left: 100px;
+}
+
+.green-button {
+    position: absolute;
+    left: 480px;
+    top: 327px;
+    width: 80px;
+    height: 40px;
+}
+
+
+.bg-modal2 {
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -10px;
+}
+
+#tooltip {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-top: -20px;
+}
+
+.radio-group {
+    display: inline-block;
+}
+
+span.radio {
+    padding: 0px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radioz,
+.radios {
+    cursor: pointer;
+}
+
+.radioz span {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    position: relative;
+    top: -66px;
+    left: 92px;
+}
+
+.radios span {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    position: relative;
+    top: -66px;
+    left: 138px;
+}
+
+.radioz span:after,
+.radios span:after {
+    content: "";
+    height: 6.5px;
+    width: 6.5px;
+    background: #0069D9;
+    opacity: 0.9;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.radioz input[type="radio"]:checked~span.radio:after,
+.radios input[type="radio"]:checked~span.radio:after {
+    transform: translate(-50%, -50%) scale(1);
+    background: #0069D9;
+    opacity: 0.9;
+}
+
+.p1 {
+    position: absolute;
+    top: 215px;
+    left: 160px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: default;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.p2 {
+    position: absolute;
+    top: 215px;
+    left: 342px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: default;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.p3 {
+    position: absolute;
+    top: 215px;
+    left: 135px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: default;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.p4 {
+    position: absolute;
+    top: 215px;
+    left: 310px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: default;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.paid1 {
+    position: relative;
+    top: -3px;
+}
+
+.paid2 {
+    position: relative;
+    top: -0.5px;
+}
+.paid3 {
+    position: relative;
+    bottom: 3px;
+}
+
+.paid4 {
+    position: relative;
+    bottom: 5px;
+}

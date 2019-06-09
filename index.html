@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/c62dfac253.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input[type='radio']").click(function () {
+                var radioValue = $("input[name='event']:checked").val();
+                if (radioValue) {
+                    $(".btn").click(function () {
+                        $(".para2").text(radioValue);
+                        $(".para2").addClass("para");
+                    });
+                }
+            });
+
+            $("input[type='radio']").change(function () {
+                $(".btn").prop("disabled", false);
+            });
+
+        });
+    </script>
+
+    <title>ATG Intership : Task 2</title>
+</head>
+
+<body>
+
+    <!-- Modal section -->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <p class="p1">paid</p>
+            <p class="p2">free</p>
+            <div>
+                <p>
+                    <span class="close">+</span>
+                    <h3 class="para">event type</h3>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="choice">
+                <p>Paid-event or free-event?</p>
+            </div>
+
+            <form action="">
+                <div class="container1">
+                    <div class="radio-group">
+                        <label class="radioz">
+                            <input type="radio" name="event" value="paid event">
+                            <img src="https://i.ya-webdesign.com/images/dollar-notes-icon-png-3.png" alt="" class="paid1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="radio-group">
+                    <div class="container2">
+                        <label class=" radios">
+                            <input type="radio" name="event" value="free event">
+                            <img src="https://www.shareicon.net/data/128x128/2016/07/23/800451_notes_512x512.png" alt=""
+                                class="paid2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+
+
+            </form>
+            <hr id="hr2">
+
+            <button class="btn btn-primary" disabled><span>Next </span><i class="fas fa-arrow-right fa-xs fa-fw">
+                </i></button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="bg-modal2">
+        <div class="modal-content">
+            <p class="p3">single cost</p>
+            <p class="p4">multiple cost</p>
+            <div>
+                <p>
+                    <span class="close2" id="cl"><img src="icons/arrow-left-solid.svg" class="back" alt=""></span>
+                    <h3 class="para2">paid event</h3>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="choice">
+                <p>Single-cost event or multiple-cost event?
+                    <span data-balloon="This is a tooltip. Use it to show if there is any help text."
+                        data-balloon-pos="up" data-balloon-length="medium">
+                        <img src="https://png.pngtree.com/svg/20151015/7d4d97ad8b.svg" alt="" id="tooltip">
+                    </span>
+                </p>
+            </div>
+
+
+            <form action="">
+                <div class="container3">
+                    <div class="radio-group">
+                        <label class="radioz">
+                            <input type="radio" name="event" value="paid">
+                            <img src="https://image.flaticon.com/icons/svg/1820/1820045.svg" alt="" class="paid3">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="radio-group">
+                    <div class="container4">
+                        <label class=" radios">
+                            <input type="radio" name="event" value="free event">
+                            <img src="https://i.ya-webdesign.com/images/dollar-notes-icon-png-3.png" alt=""
+                                class="paid4">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </form>
+            <hr id="hr2">
+
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
